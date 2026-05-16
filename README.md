@@ -1,12 +1,16 @@
-# Flutter & Dart Tasks
+# Android Course Tasks — Eng. Fady Esam
 
-Welcome to the **Flutter-Tasks** repository! This repository contains a structured collection of core Dart programming assignments along with introductory Flutter UI development applications, demonstrating fundamental to advanced concepts in object-oriented programming, data structures, and state management.
+Welcome to the **Flutter-Tasks** repository! This repository contains a structured collection of Core Dart assignments and introductory Flutter UI screens developed for the **Android/Mobile Development** course under the instruction of **Eng. Fady Esam**. 
+
+The tasks demonstrate a solid progression from fundamental programming logic and data structures up to custom widget layout designs in Flutter.
+
+---
 
 ## 📁 Repository Structure
 
-The workspace is organized as follows:
+The workspace is organized into core programming assignments and application modules:
 * **Dart Core Tasks (`Task_01.dart` to `Task_04.dart`)**: Command-line programs focused on algorithmic logic, collections, and object-oriented principles.
-* **Flutter Apps (`Task_05/`)**: Complete Flutter projects showcasing modular architecture and clean UI implementations.
+* **Flutter Applications (`Task_05/`)**: A Flutter project codebase showcasing modular structure and functional UI rendering.
 
 ---
 
@@ -15,30 +19,29 @@ The workspace is organized as follows:
 ### 🎯 Task 01: Random Grade Evaluator
 * **File:** `Task_01.dart`
 * **Concepts:** Control structures (`if-else`), standard output, and random number generation (`dart:math`).
-* **Description:** Generates a random academic degree percentage (0-100) and maps it precisely to its corresponding standard letter grade standard (e.g., `A+`, `-A`, `B+`, etc.).
+* **Description:** Generates a random academic score (0-100) and maps it precisely to its corresponding letter grade scale (e.g., `A+`, `-A`, `B+`, etc.).
 
 ### 📊 Task 02: Student Grading & Database Console System
 * **File:** `Task_02.dart`
-* **Concepts:** 2D Lists (`List<List<T>>`), console I/O handling (`dart:io`), modular helper methods, error boundaries (`try-catch`), and interactive runtime loops.
-* **Description:** An interactive application allowing users to input a database of student names alongside multi-subject scores. Features an endless application terminal menu supporting deep search-by-name lookups and summary metrics.
+* **Concepts:** 2D Lists (`List<List<double>>`), console I/O (`dart:io`), error handling (`try-catch`), and interactive runtime menu loops.
+* **Description:** An interactive application allowing users to register a database of student names alongside multi-subject scores. Features a continuous command-line terminal menu that supports displaying all records and looking up specific student averages.
 
 ### 🗂️ Task 03: High-Order Collections & Recursive Processing
 * **File:** `Task_03.dart`
-* **Concepts:** `Set` management, `Map<Key, List<Value>>` relationships, recursive functions, collection operators (spread operators `{...}`), and lambda expressions (`forEach`).
-* **Description:** Practical implementations demonstrating how to merge collections seamlessly, prevent duplicate records, recursively iterate through linear lists without native iterative loops, and process complex structural mappings.
+* **Concepts:** `Set` management, `Map<String, List<double>>` mappings, recursive methods, spread operators (`...`), and lambda expressions (`forEach`).
+* **Description:** Demonstrates practical uses of unique collections to avoid duplicate entries, custom list merging via modern syntax operators, and recursive printing without native iterative loops.
 
 ### 🏛️ Task 04: Object-Oriented Blueprint & Polymorphism
 * **File:** `Task_04.dart`
-* **Concepts:** Encapsulation (private backing variables via `_`), custom getters/setters with inline validations, static metadata configurations, classic base class inheritance, and polymorphic Interface contracts (`implements`).
-* **Description:** Sets up an absolute simulation of organizational personnel structures by implementing an explicit hierarchy across `Person`, `Employee`, and specialized `Developer` instances.
+* **Concepts:** Encapsulation (private backing fields `_`), getters/setters with validation rules, static class fields, classic inheritance, and polymorphic Interface contracts (`implements`).
+* **Description:** Implements a clear simulated structural model of organizational personnel across a distinct class hierarchy (`Person` ➔ `Employee` ➔ `Developer`).
 
-### 📱 Task 05: Simple Profile Application
+### 📱 Task 05: Profile & Form Layout Screen
 * **Directory:** `Task_05/simple_profile_app/`
-* **Architecture / File Structure:**
-  ```text
-  lib/
-  ├── main.dart
-  └── features/
-      └── presentation/
-          text/views/
-              └── profile_view.dart
+* **Concepts:** Layout composition (`Column`, `Row`, `Card`), text inputs, explicit visual alignment, and primary floating action buttons.
+* **Description:** A pixel-accurate reconstruction of the required assignment interface. It features a custom `AppBar`, a responsive avatar `Image`, descriptive text layouts, input fields for both **Email** and **Password** (with security character masking), a styled **Submit Button**, and an independent `FloatingActionButton`.
+
+To execute any of the terminal-based console scripts directly, run the following inside your command line:
+```bash
+dart Task_01.dart
+dart Task_02.dart
